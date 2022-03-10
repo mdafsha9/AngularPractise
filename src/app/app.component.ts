@@ -12,4 +12,5 @@ export class AppComponent {
   colorVal = "yellow";
   bgColor = "green";
   width="150px";
+  classValue = "one";
 }
