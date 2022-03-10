@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngularPractise';
+  name:any = " ";
+  img = "assets/images.png";
+  colorVal = "yellow";
+  bgColor = "green";
+  width="150px";
 }
