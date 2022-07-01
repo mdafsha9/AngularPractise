@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 title = "Hello Angular Framework!";
-showMsz = true;
+showMsz = false;
 }
