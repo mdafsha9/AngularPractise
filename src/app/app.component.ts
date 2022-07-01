@@ -6,11 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'AngularPractise';
-  name:any = " ";
-  img = "assets/images.png";
-  colorVal = "yellow";
-  bgColor = "green";
-  width="150px";
-  classValue = "one";
+title = "Hello Angular Framework!";
 }
