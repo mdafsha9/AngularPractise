@@ -1,4 +1,5 @@
 
 <h1>{{title}}</h1>
-<div *ngIf="showMsz; else ShowElseMessage">Show Message</div>
+<div *ngIf="showMsz; then ShowThenMessage; else ShowElseMessage">Show Message</div>
+<ng-template #ShowThenMessage>Showing Then message</ng-template>
 <ng-template #ShowElseMessage>Showing Else message</ng-template>
