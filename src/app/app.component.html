@@ -1,5 +1,16 @@
 
 <h1>{{title}}</h1>
-<div *ngIf="showMsz; then ShowThenMessage; else ShowElseMessage">Show Message</div>
-<ng-template #ShowThenMessage>Showing Then message</ng-template>
-<ng-template #ShowElseMessage>Showing Else message</ng-template>
+<div *ngIf="showMsz; then showThenMsz; else showElseMsz">Show Message</div>
+<ng-template #showThenMsz>Show Then Message</ng-template>
+<ng-template #showElseMsz>Show Else Message</ng-template>
+
+<div [ngSwitch]="day">
+  <div *ngSwitchCase="'Sunday'">Sunday</div>
+  <div *ngSwitchCase="'Monday'">Monday</div>
+  <div *ngSwitchCase="'Tuesday'">Tuesday</div>
+  <div *ngSwitchCase="'Wednesday'">Wednesday</div>
+  <div *ngSwitchCase="'Thursday'">Thursday</div>
+  <div *ngSwitchCase="'Friday'">Friday</div>
+  <div *ngSwitchCase="'Saturday'">Saturday</div>
+  <div *ngSwitchDefault = "'Invalid'">Invalid</div>
+</div>
