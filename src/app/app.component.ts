@@ -9,4 +9,5 @@ export class AppComponent {
 title = "Hello Angular Framework!";
 showMsz = true;
 day = "hkjday";
+months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "November", "December"];
 }
