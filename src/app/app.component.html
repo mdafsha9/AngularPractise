@@ -5,7 +5,7 @@
 <ng-template #showElseMsz>Show Else Message</ng-template>
 
 <div [ngSwitch]="day">
-  <div *ngSwitchCase="'Sunday'">Sunday</div>
+  <div *ngSwitchCase="'Sunday'" [ngStyle]="{'color':color}">Sunday</div>
   <div *ngSwitchCase="'Monday'">Monday</div>
   <div *ngSwitchCase="'Tuesday'">Tuesday</div>
   <div *ngSwitchCase="'Wednesday'">Wednesday</div>
@@ -15,4 +15,6 @@
   <div *ngSwitchDefault = "'Invalid'">Invalid</div>
 </div>
 
-<ul><li *ngFor= "let month of months">{{month}}</li></ul>
+<ul>
+  <li *ngFor= "let month of months">{{month}}</li>
+</ul>

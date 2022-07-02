@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
 title = "Hello Angular Framework!";
 showMsz = true;
-day = "hkjday";
+day = "Sunday";
 months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "November", "December"];
+color = 'red';
 }
